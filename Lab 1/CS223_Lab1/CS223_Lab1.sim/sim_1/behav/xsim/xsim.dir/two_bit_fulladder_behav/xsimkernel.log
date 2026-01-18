@@ -1,0 +1,7 @@
+Running: xsim.dir/two_bit_fulladder_behav/xsimk.exe -simmode gui -wdb two_bit_fulladder_behav.wdb -simrunnum 0 -socket 59799
+Design successfully loaded
+Design Loading Memory Usage: 29544 KB (Peak: 29544 KB)
+Design Loading CPU Usage: 1078 ms
+Simulation completed
+Simulation Memory Usage: 30644 KB (Peak: 30644 KB)
+Simulation CPU Usage: 1609 ms

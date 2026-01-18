@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Dec 10 09:11:05 2025
+# Process ID         : 44168
+# Current directory  : C:/FPGA/Lab4/Lab4.runs/impl_1
+# Command line       : vivado.exe -log ParkingSystem_Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ParkingSystem_Top.tcl -notrace
+# Log file           : C:/FPGA/Lab4/Lab4.runs/impl_1/ParkingSystem_Top.vdi
+# Journal file       : C:/FPGA/Lab4/Lab4.runs/impl_1\vivado.jou
+# Running On         : DESKTOP-VGVTN86
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 275HX
+# CPU Frequency      : 3072 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 24
+# Host memory        : 33673 MB
+# Swap memory        : 6174 MB
+# Total Virtual      : 39847 MB
+# Available Virtual  : 7673 MB
+#-----------------------------------------------------------
+source ParkingSystem_Top.tcl -notrace

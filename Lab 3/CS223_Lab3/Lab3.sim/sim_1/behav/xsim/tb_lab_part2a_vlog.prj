@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Lab3.srcs/sources_1/new/clock_divider.sv" \
+"../../../../Lab3.srcs/sources_1/new/d_flipflop.sv" \
+"../../../../Lab3.srcs/sources_1/new/eight_to1mux.sv" \
+"../../../../Lab3.srcs/sources_1/new/hexadecimal_7segment.sv" \
+"../../../../Lab3.srcs/sources_1/new/lab_part2b.sv" \
+"../../../../Lab3.srcs/sources_1/new/multifunction_register.sv" \
+"../../../../Lab3.srcs/sources_1/new/lab_part3.sv" \
+"../../../../Lab3.srcs/sources_1/new/lab_part1.sv" \
+"../../../../Lab3.srcs/sources_1/new/lab_part2a.sv" \
+"../../../../Lab3.srcs/sim_1/new/tb_lab_part2a.sv" \
+"../../../../Lab3.srcs/sim_1/new/tb_labpart3.sv" \
+"../../../../Lab3.srcs/sim_1/new/tb_multifunction_register.sv" \
+"../../../../Lab3.srcs/sim_1/new/tb_sevensegmentdec.sv" \
+"../../../../Lab3.srcs/sim_1/new/tb_labpart2b.sv" \
+"../../../../Lab3.srcs/sim_1/new/tb_labpart1.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

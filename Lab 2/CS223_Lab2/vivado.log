@@ -1,0 +1,603 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Nov  5 12:14:59 2025
+# Process ID         : 31964
+# Current directory  : C:/FPGA/CS223_Lab2
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent21500 C:\FPGA\CS223_Lab2\CS223_Lab2.xpr
+# Log file           : C:/FPGA/CS223_Lab2/vivado.log
+# Journal file       : C:/FPGA/CS223_Lab2\vivado.jou
+# Running On         : DESKTOP-VGVTN86
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 275HX
+# CPU Frequency      : 3072 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 24
+# Host memory        : 33673 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35821 MB
+# Available Virtual  : 17317 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/FPGA/CS223_Lab2/CS223_Lab2.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/FPGA/CS223_Lab2/CS223_Lab2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'bit_shifter_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'bit_shifter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj bit_shifter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/bit_shifter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shifter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_bitshift.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shifter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot bit_shifter_tb_behav xil_defaultlib.bit_shifter_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot bit_shifter_tb_behav xil_defaultlib.bit_shifter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bit_shifter
+Compiling module xil_defaultlib.bit_shifter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot bit_shifter_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "bit_shifter_tb_behav -key {Behavioral:sim_1:Functional:bit_shifter_tb} -tclbatch {bit_shifter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source bit_shifter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Starting bit_shifter testbench...
+Test complete! All 32 combinations passed.
+$stop called at time : 320 ns : File "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_bitshift.sv" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'bit_shifter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1196.520 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'bit_shifter_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'bit_shifter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj bit_shifter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/bit_shifter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shifter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_bitshift.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shifter_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot bit_shifter_tb_behav xil_defaultlib.bit_shifter_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot bit_shifter_tb_behav xil_defaultlib.bit_shifter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bit_shifter
+Compiling module xil_defaultlib.bit_shifter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot bit_shifter_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "bit_shifter_tb_behav -key {Behavioral:sim_1:Functional:bit_shifter_tb} -tclbatch {bit_shifter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source bit_shifter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Starting bit_shifter testbench...
+Test complete! All 32 combinations passed.
+$stop called at time : 320 ns : File "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_bitshift.sv" Line 52
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'bit_shifter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1228.402 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'bit_shifter_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'bit_shifter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj bit_shifter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/bit_shifter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shifter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_bitshift.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shifter_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot bit_shifter_tb_behav xil_defaultlib.bit_shifter_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot bit_shifter_tb_behav xil_defaultlib.bit_shifter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bit_shifter
+Compiling module xil_defaultlib.bit_shifter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot bit_shifter_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "bit_shifter_tb_behav -key {Behavioral:sim_1:Functional:bit_shifter_tb} -tclbatch {bit_shifter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source bit_shifter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+bit_shifter Ã¶zel senaryo testi baÅŸlÄ±yor (sadece izleme)...
+Girdi (sw):       10001
+GerÃ§ekleÅŸen (led): 10000
+Test tamamlandÄ±.
+$stop called at time : 10 ns : File "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_bitshift.sv" Line 34
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'bit_shifter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1228.402 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'bit_shifter_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'bit_shifter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj bit_shifter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/bit_shifter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shifter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_bitshift.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shifter_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot bit_shifter_tb_behav xil_defaultlib.bit_shifter_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot bit_shifter_tb_behav xil_defaultlib.bit_shifter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bit_shifter
+Compiling module xil_defaultlib.bit_shifter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot bit_shifter_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "bit_shifter_tb_behav -key {Behavioral:sim_1:Functional:bit_shifter_tb} -tclbatch {bit_shifter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source bit_shifter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 320 ns : File "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_bitshift.sv" Line 21
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'bit_shifter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1229.531 ; gain = 1.129
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'bit_shifter_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'bit_shifter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj bit_shifter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/bit_shifter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shifter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_bitshift.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shifter_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot bit_shifter_tb_behav xil_defaultlib.bit_shifter_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot bit_shifter_tb_behav xil_defaultlib.bit_shifter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bit_shifter
+Compiling module xil_defaultlib.bit_shifter_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot bit_shifter_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "bit_shifter_tb_behav -key {Behavioral:sim_1:Functional:bit_shifter_tb} -tclbatch {bit_shifter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source bit_shifter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+bit_shifter Ã¶zel durum testi baÅŸlÄ±yor...
+Girdi (sw): 00000 | GerÃ§ekleÅŸen (led): 00000
+Girdi (sw): 10000 | GerÃ§ekleÅŸen (led): 00000
+Girdi (sw): 00001 | GerÃ§ekleÅŸen (led): 00001
+Girdi (sw): 10001 | GerÃ§ekleÅŸen (led): 10000
+Girdi (sw): 00010 | GerÃ§ekleÅŸen (led): 00010
+Girdi (sw): 10010 | GerÃ§ekleÅŸen (led): 00001
+Girdi (sw): 00011 | GerÃ§ekleÅŸen (led): 00011
+Girdi (sw): 10011 | GerÃ§ekleÅŸen (led): 10001
+Test tamamlandÄ±.
+$stop called at time : 80 ns : File "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_bitshift.sv" Line 59
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'bit_shifter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2263.418 ; gain = 0.000
+set_property top logicfunc [current_fileset]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property top logicfunc_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'logicfunc_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Dosya baþka bir iþlem tarafýndan kullanýldýðýndan bu iþlem dosyaya eriþemiyor: "C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'logicfunc_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Dosya baþka bir iþlem tarafýndan kullanýldýðýndan bu iþlem dosyaya eriþemiyor: "C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/simulate.log"
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+WARNING: [Vivado 12-3661] Failed to remove file:C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/bit_shifter_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/xelab.pb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/xsim.dir/bit_shifter_tb_behav/xsim.xdbg
+WARNING: [Vivado 12-3661] Failed to remove file:C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/xsim.dir/bit_shifter_tb_behav/xsimcrash.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/xsim.dir/bit_shifter_tb_behav/xsimk.exe
+WARNING: [Vivado 12-3661] Failed to remove file:C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/xsim.dir/bit_shifter_tb_behav/xsimkernel.log
+WARNING: [Vivado 12-4421] Failed to remove directory:C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/xsim.dir/bit_shifter_tb_behav
+WARNING: [Vivado 12-4421] Failed to remove directory:C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/xsim.dir
+INFO: [Vivado 12-2267] Reset complete
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'logicfunc_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Dosya baþka bir iþlem tarafýndan kullanýldýðýndan bu iþlem dosyaya eriþemiyor: "C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/simulate.log"
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_bitshift.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+close_sim
+ERROR: [Common 17-180] Spawn failed: No error
+INFO: [Simtcl 6-16] Simulation closed
+ERROR: [Common 17-39] 'close_sim' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  8 17:52:59 2025...

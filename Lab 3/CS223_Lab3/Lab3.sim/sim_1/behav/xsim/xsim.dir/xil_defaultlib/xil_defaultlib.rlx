@@ -1,0 +1,20 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/FPGA/Lab3/Lab3.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,
+,,,,C:/FPGA/Lab3/Lab3.srcs/sim_1/new/tb_labpart3.sv,,labpart2a,,,,,,,,
+,,,,,,tb_lab_part1,,,,,,,,
+,,,,C:/FPGA/Lab3/Lab3.srcs/sim_1/new/tb_labpart1.sv,,tb_labpart2b,,,,,,,,
+C:/FPGA/Lab3/Lab3.srcs/sim_1/new/tb_labpart3.sv,1764134810,systemVerilog,,C:/FPGA/Lab3/Lab3.srcs/sim_1/new/tb_multifunction_register.sv,,tb_labpart3,,uvm,,,,,,
+C:/FPGA/Lab3/Lab3.srcs/sim_1/new/tb_multifunction_register.sv,1764076197,systemVerilog,,C:/FPGA/Lab3/Lab3.srcs/sim_1/new/tb_sevensegmentdec.sv,,tb_multifunction_register,,uvm,,,,,,
+C:/FPGA/Lab3/Lab3.srcs/sim_1/new/tb_sevensegmentdec.sv,1763917148,systemVerilog,,C:/FPGA/Lab3/Lab3.srcs/sim_1/new/tb_labpart2b.sv,,tb_sevensegmentdec,,uvm,,,,,,
+C:/FPGA/Lab3/Lab3.srcs/sources_1/new/clock_divider.sv,1764090291,systemVerilog,,C:/FPGA/Lab3/Lab3.srcs/sources_1/new/d_flipflop.sv,,clock_divider,,uvm,,,,,,
+C:/FPGA/Lab3/Lab3.srcs/sources_1/new/d_flipflop.sv,1764090435,systemVerilog,,C:/FPGA/Lab3/Lab3.srcs/sources_1/new/eight_to1mux.sv,,d_flip_flop,,uvm,,,,,,
+C:/FPGA/Lab3/Lab3.srcs/sources_1/new/eight_to1mux.sv,1764091034,systemVerilog,,C:/FPGA/Lab3/Lab3.srcs/sources_1/new/hexadecimal_7segment.sv,,mux8to1,,uvm,,,,,,
+C:/FPGA/Lab3/Lab3.srcs/sources_1/new/hexadecimal_7segment.sv,1764090358,systemVerilog,,C:/FPGA/Lab3/Lab3.srcs/sources_1/new/lab_part2b.sv,,hexadecimal_7segment,,uvm,,,,,,
+C:/FPGA/Lab3/Lab3.srcs/sources_1/new/lab_part1.sv,1764136610,systemVerilog,,C:/FPGA/Lab3/Lab3.srcs/sources_1/new/lab_part2a.sv,,lab_part1,,uvm,,,,,,
+C:/FPGA/Lab3/Lab3.srcs/sources_1/new/lab_part2a.sv,1764076202,systemVerilog,,C:/FPGA/Lab3/Lab3.srcs/sim_1/new/tb_lab_part2a.sv,,lab_part2a,,uvm,,,,,,
+C:/FPGA/Lab3/Lab3.srcs/sources_1/new/lab_part2b.sv,1764090337,systemVerilog,,C:/FPGA/Lab3/Lab3.srcs/sources_1/new/multifunction_register.sv,,lab_part2b,,uvm,,,,,,
+C:/FPGA/Lab3/Lab3.srcs/sources_1/new/lab_part3.sv,1764097197,systemVerilog,,C:/FPGA/Lab3/Lab3.srcs/sources_1/new/lab_part1.sv,,lab_part3,,uvm,,,,,,
+C:/FPGA/Lab3/Lab3.srcs/sources_1/new/multifunction_register.sv,1764090379,systemVerilog,,C:/FPGA/Lab3/Lab3.srcs/sources_1/new/lab_part3.sv,,multifunction_register,,uvm,,,,,,

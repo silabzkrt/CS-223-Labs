@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/FPGA/Lab4/Lab4.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,
+C:/FPGA/Lab4/Lab4.srcs/sim_1/new/tb_parking_system.sv,1765344100,systemVerilog,,,,tb_ParkingSystem_Fixed,,uvm,,,,,,
+C:/FPGA/Lab4/Lab4.srcs/sources_1/new/ParkingSystem.sv,1765342865,systemVerilog,,C:/FPGA/Lab4/Lab4.srcs/sim_1/new/tb_parking_system.sv,,Debouncer;ParkingSystem_Top;SegDriver,,uvm,,,,,,

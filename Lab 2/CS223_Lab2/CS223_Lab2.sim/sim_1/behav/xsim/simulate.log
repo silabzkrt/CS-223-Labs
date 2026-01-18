@@ -1,0 +1,12 @@
+Time resolution is 1 ps
+bit_shifter özel durum testi başlıyor...
+Girdi (sw): 00000 | Gerçekleşen (led): 00000
+Girdi (sw): 10000 | Gerçekleşen (led): 00000
+Girdi (sw): 00001 | Gerçekleşen (led): 00001
+Girdi (sw): 10001 | Gerçekleşen (led): 10000
+Girdi (sw): 00010 | Gerçekleşen (led): 00010
+Girdi (sw): 10010 | Gerçekleşen (led): 00001
+Girdi (sw): 00011 | Gerçekleşen (led): 00011
+Girdi (sw): 10011 | Gerçekleşen (led): 10001
+Test tamamlandı.
+$stop called at time : 80 ns : File "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_bitshift.sv" Line 59

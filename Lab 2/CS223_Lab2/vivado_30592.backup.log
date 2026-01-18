@@ -1,0 +1,1252 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Nov  5 11:18:47 2025
+# Process ID         : 30592
+# Current directory  : C:/FPGA/CS223_Lab2
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent34620 C:\FPGA\CS223_Lab2\CS223_Lab2.xpr
+# Log file           : C:/FPGA/CS223_Lab2/vivado.log
+# Journal file       : C:/FPGA/CS223_Lab2\vivado.jou
+# Running On         : DESKTOP-VGVTN86
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 9 275HX
+# CPU Frequency      : 3072 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 24
+# Host memory        : 33673 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35821 MB
+# Available Virtual  : 16335 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/FPGA/CS223_Lab2/CS223_Lab2.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/FPGA/CS223_Lab2/CS223_Lab2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_decoder_2to4'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_decoder_2to4' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_decoder_2to4_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_decoder_2to4_behav xil_defaultlib.tb_decoder_2to4 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_decoder_2to4_behav xil_defaultlib.tb_decoder_2to4 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'y_out' on this module [C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_decoder2_to_4.sv:13]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_decoder_2to4'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_decoder_2to4' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+ERROR: [Common 17-180] Spawn failed: No error
+"xvlog --incr --relax -L uvm -prj tb_decoder_2to4_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/dec_2to4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dec_2to4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_decoder2_to_4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_decoder_2to4
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_decoder_2to4'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_decoder_2to4' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_decoder_2to4_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/dec_2to4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dec_2to4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_decoder2_to_4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_decoder_2to4
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_decoder_2to4_behav xil_defaultlib.tb_decoder_2to4 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_decoder_2to4_behav xil_defaultlib.tb_decoder_2to4 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dec_2to4
+Compiling module xil_defaultlib.tb_decoder_2to4
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_decoder_2to4_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_decoder_2to4_behav -key {Behavioral:sim_1:Functional:tb_decoder_2to4} -tclbatch {tb_decoder_2to4.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_decoder_2to4.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+--- Starting Decoder Testbench ---
+Time | En | In | Y_Out
+----------------------------
+--- Test Case 1: Enable OFF ---
+                   0 | 0  | 00 | 0000
+               10000 | 0  | 10 | 0000
+               20000 | 0  | 11 | 0000
+--- Test Case 2: Enable ON ---
+               30000 | 1  | 00 | 0001
+               40000 | 1  | 01 | 0010
+               50000 | 1  | 10 | 0100
+               60000 | 1  | 11 | 1000
+----------------------------
+--- Testbench Finished ---
+$finish called at time : 70 ns : File "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_decoder2_to_4.sv" Line 48
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_decoder_2to4_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1205.227 ; gain = 20.184
+set_property top function_g [current_fileset]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Nov  5 11:24:51 2025] Launched synth_1...
+Run output will be captured here: C:/FPGA/CS223_Lab2/CS223_Lab2.runs/synth_1/runme.log
+[Wed Nov  5 11:24:51 2025] Launched impl_1...
+Run output will be captured here: C:/FPGA/CS223_Lab2/CS223_Lab2.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-21:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2261.125 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B7AEA5A
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/utils_1/imports/synth_1/function_g.dcp with file C:/FPGA/CS223_Lab2/CS223_Lab2.runs/synth_1/function_g.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Nov  5 11:27:24 2025] Launched synth_1...
+Run output will be captured here: C:/FPGA/CS223_Lab2/CS223_Lab2.runs/synth_1/runme.log
+[Wed Nov  5 11:27:24 2025] Launched impl_1...
+Run output will be captured here: C:/FPGA/CS223_Lab2/CS223_Lab2.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-21:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2261.125 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B7AEA5A
+set_property PROGRAM.FILE {C:/FPGA/CS223_Lab2/CS223_Lab2.runs/impl_1/function_g.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/FPGA/CS223_Lab2/CS223_Lab2.runs/impl_1/function_g.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Nov  5 11:29:58 2025] Launched impl_1...
+Run output will be captured here: C:/FPGA/CS223_Lab2/CS223_Lab2.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-21:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2261.125 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B7AEA5A
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/utils_1/imports/synth_1/function_g.dcp with file C:/FPGA/CS223_Lab2/CS223_Lab2.runs/synth_1/function_g.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Nov  5 11:31:55 2025] Launched synth_1...
+Run output will be captured here: C:/FPGA/CS223_Lab2/CS223_Lab2.runs/synth_1/runme.log
+[Wed Nov  5 11:31:55 2025] Launched impl_1...
+Run output will be captured here: C:/FPGA/CS223_Lab2/CS223_Lab2.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+ERROR: [Common 17-180] Spawn failed: No error
+set_property top eighttoonemux [current_fileset]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property top tb_8to1mux [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property top eighttoonemux_tb [current_fileset]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_8x1.sv w ]
+add_files -fileset sim_1 C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sim_1/new/tb_8x1.sv
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\tb_8to1mux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/utils_1/imports/synth_1/function_g.dcp with file C:/FPGA/CS223_Lab2/CS223_Lab2.runs/synth_1/function_g.dcp
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Nov  5 11:34:56 2025] Launched synth_1...
+Run output will be captured here: C:/FPGA/CS223_Lab2/CS223_Lab2.runs/synth_1/runme.log
+[Wed Nov  5 11:34:56 2025] Launched impl_1...
+Run output will be captured here: C:/FPGA/CS223_Lab2/CS223_Lab2.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'logicfunc'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Dosya baþka bir iþlem tarafýndan kullanýldýðýndan bu iþlem dosyaya eriþemiyor: "C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/simulate.log"
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'logicfunc'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Dosya baþka bir iþlem tarafýndan kullanýldýðýndan bu iþlem dosyaya eriþemiyor: "C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/simulate.log"
+INFO: [Common 17-17] undo 'relaunch_sim'
+INFO: [Common 17-17] undo 'relaunch_sim'
+ERROR: [Common 17-69] Command failed: boost::filesystem::remove: Dosya baþka bir iþlem tarafýndan kullanýldýðýndan bu iþlem dosyaya eriþemiyor: "C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/simulate.log"
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Nov  5 11:35:47 2025] Launched synth_1...
+Run output will be captured here: C:/FPGA/CS223_Lab2/CS223_Lab2.runs/synth_1/runme.log
+[Wed Nov  5 11:35:47 2025] Launched impl_1...
+Run output will be captured here: C:/FPGA/CS223_Lab2/CS223_Lab2.runs/impl_1/runme.log
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+WARNING: [Vivado 12-3661] Failed to remove file:C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/xsim.dir/tb_decoder_2to4_behav/xsim.xdbg
+WARNING: [Vivado 12-4421] Failed to remove directory:C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/xsim.dir/tb_decoder_2to4_behav
+WARNING: [Vivado 12-4421] Failed to remove directory:C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/xsim.dir
+INFO: [Vivado 12-2267] Reset complete
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\mux_4to1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\function_g.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\eighttoonemux.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_8x1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\bit_shifter.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\dec_2to4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\mux_4to1.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sim_1\new\tb_decoder2_to_4.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\FPGA\CS223_Lab2\CS223_Lab2.srcs\sources_1\new\logicfunc.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Nov  5 11:37:59 2025] Launched synth_1...
+Run output will be captured here: C:/FPGA/CS223_Lab2/CS223_Lab2.runs/synth_1/runme.log
+[Wed Nov  5 11:37:59 2025] Launched impl_1...
+Run output will be captured here: C:/FPGA/CS223_Lab2/CS223_Lab2.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'logicfunc'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'logicfunc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj logicfunc_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/dec_2to4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dec_2to4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/mux_4to1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4to1
+WARNING: [VRFC 10-2502] extra semicolon in $unit (global) scope [C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/mux_4to1.sv:29]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/mux_8to1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_8to1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/logicfunc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logicfunc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot logicfunc_behav xil_defaultlib.logicfunc xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot logicfunc_behav xil_defaultlib.logicfunc xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'y' on this module [C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/logicfunc.sv:62]
+ERROR: [VRFC 10-3180] cannot find port 'sel' on this module [C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/logicfunc.sv:61]
+ERROR: [VRFC 10-3180] cannot find port 'in' on this module [C:/FPGA/CS223_Lab2/CS223_Lab2.srcs/sources_1/new/logicfunc.sv:60]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/FPGA/CS223_Lab2/CS223_Lab2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  5 11:38:36 2025...
